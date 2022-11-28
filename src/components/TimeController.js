@@ -1,11 +1,12 @@
 import React from "react";
 import MonthList from "./MonthList";
+import { connect } from 'react-redux';
 
 class TimeController extends React.Component {
   constructor(props) {
     super(props);
     this.state ={
-
+      
     };
   }
 
@@ -23,5 +24,7 @@ class TimeController extends React.Component {
     );
   }
 }
+
+TimeController = connect()(TimeController);
 
 export default TimeController;
